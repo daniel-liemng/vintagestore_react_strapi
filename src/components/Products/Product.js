@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Product = ({ id, title, price, image: { url } }) => {
+const Product = ({ id, title, price, image }) => {
   return (
     <article className='product'>
       <div className='img-container'>
-        <img src={url} alt={title} />
+        <img src={image} alt={title} />
         <Link to={`/products/${id}`} className='btn btn-primary product-link'>
           Details
         </Link>

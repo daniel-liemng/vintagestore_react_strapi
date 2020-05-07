@@ -5,7 +5,7 @@ import { CartContext } from '../../context/cart';
 import { FaAngleDoubleUp, FaAngleDoubleDown } from 'react-icons/fa';
 
 const CartItem = ({ id, title, image, price, amount }) => {
-  const { removeItem, increaseAmount, decreaseAmount, clearCart } = useContext(
+  const { removeItem, increaseAmount, decreaseAmount } = useContext(
     CartContext
   );
 
