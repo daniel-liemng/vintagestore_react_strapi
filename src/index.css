@@ -461,7 +461,7 @@ Cart Link
 }
 .cart-link-container a {
   margin-right: 10px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 .cart-link-total {
   display: block;
