@@ -1,4 +1,4 @@
-import url from './URL';
+// import url from './URL';
 
 export const flattenProducts = (data) => {
   return data.map((item) => {

@@ -5,14 +5,20 @@ import App from './App';
 
 import { ProductProvider } from './context/products';
 import { CartProvider } from './context/cart';
+import { UserProvider } from './context/user';
+import { AlertProvider } from './context/alert';
 
 ReactDOM.render(
-  <ProductProvider>
-    <CartProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </CartProvider>
-  </ProductProvider>,
+  <AlertProvider>
+    <UserProvider>
+      <ProductProvider>
+        <CartProvider>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+        </CartProvider>
+      </ProductProvider>
+    </UserProvider>
+  </AlertProvider>,
   document.getElementById('root')
 );
