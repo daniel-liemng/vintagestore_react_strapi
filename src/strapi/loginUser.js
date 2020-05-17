@@ -1,3 +1,5 @@
+// send Login request to Strapi
+
 import axios from 'axios';
 import url from '../utils/URL';
 
